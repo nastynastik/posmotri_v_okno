@@ -67,6 +67,7 @@ ol {
   border-bottom: 1px solid #ffffff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
+  color: inherit;
 }
 
 
@@ -99,18 +100,15 @@ ol {
 }
 
 .content__list {
-  height: 298px;
-  width: 399px;
   overflow-x: hidden;
   overflow-y: auto;
   gap: 30px;
-  position: relative;
+  block-size: 298px;
 }
 
 .content__details {
  width: 400px;
  height: 100%;
- flex: 1;
 }
 
 .result__video-container {
@@ -120,7 +118,7 @@ ol {
 }
 
 .result {
-	inline-size: 711px;
+  inline-size: 711px;
 }
 
 .result__video {
@@ -142,6 +140,9 @@ ol {
   text-decoration: none;
   background-color: #545050;
 }
+.content__card-link:hover {
+  text-decoration: none;
+}
 
 .content__list-item:focus-visible {
   border: Mixed solid #FFFFFF;
@@ -151,28 +152,33 @@ ol {
 .content__video-card {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  
+  
 }
 
 .content__video-card-title {
-  max-width: 200px;
   text-transform: uppercase;
   font-family: "Oswald", "Roboto", sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: var(--white);
+  margin-bottom: 5px;
+  line-height: 1;
 }  
 
 .content__video-card-description {
-  max-width: 200px;
-  padding-right: 2px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px;
+  line-height: 100%;
 }
 
 .content__card-link {
   display: block;
   text-decoration: none;
   color: var(--white);
-  padding: 3px;
+  padding: 2px;
 }
 
 .content__video-card-thumbnail {
@@ -187,7 +193,7 @@ ol {
 }
 
 .content__card-link_current {
-	background-color: #545050;
+  background-color: #545050;
 }
 
 .visually-hidden {
@@ -249,18 +255,18 @@ ol {
 
 .button {
   width: 194px;
-  height: 34px;
   gap: 10px;
   border: 1px solid #fff;
   background: transparent;
   color: #fff;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+  padding: 5px;
 }
 
 .button:focus {
@@ -282,17 +288,15 @@ ol {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: end;
 }
 
-
 .more-button {
   width: 399px;
-  height: 34px;
 }
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   align-items: center;
 }
+
